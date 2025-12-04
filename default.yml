@@ -16,10 +16,14 @@ org_settings:
   host_expiry_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://webhook.site/94840d9f-deb7-4cb6-9194-55a6d43c7473
   server_settings:
     server_url: $FLEET_URL
   org_info:
-    org_name: Fleet
+    org_name: TomsAmazingFleet
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
   features:
