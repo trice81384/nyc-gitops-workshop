@@ -18,9 +18,21 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  macos_settings:
+    custom_setttings:
+      - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+      - path: ../lib/macos/configuration-profiles/pascode-settings-ddm.json
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
     - path: ../lib/macos/scripts/set-timezone.script.sh
+    - path: ../lib/windows/scripts/set-wallpaper.ps1
+  enable_disk_encryption: true
+  macos_updates:
+    deadline: "2025-12-31"
+    minimum_version: "24.4"
+  ipados_updates:
+    deadline: "2025-12-31"
+    minimum_version: "24.4"
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
