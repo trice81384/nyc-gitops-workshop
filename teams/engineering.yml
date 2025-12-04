@@ -41,8 +41,8 @@ team_settings:
       destination_url: https://webhook.site/94840d9f-deb7-4cb6-9194-55a6d43c7473
       host_batch_size: 0
       policy_ids:
-        - 3309
-        - 3311
+        - 3587
+        - 3303
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
   features:
