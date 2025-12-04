@@ -22,6 +22,7 @@ controls:
   macos_settings:
     custom_setttings:
       - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+      - path: ../lib/macos/configuration-profiles/pascode-settings-ddm.json
   macos_updates:
     deadline: "2025-12-31"
     minimum_version: "24.4"
